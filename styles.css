@@ -1,0 +1,124 @@
+
+/* Reset semua elemen HTML dan set font default */
+* {
+  margin: 0;          /* Hilangkan margin default browser */
+  padding: 0;         /* Hilangkan padding default browser */
+  box-sizing: border-box; /* Hitung width termasuk padding dan border */
+  font-family: 'Poppins', sans-serif; /* Gunakan font Poppins secara global */
+}
+
+/* Styling untuk body/tubuh halaman */
+body {
+  background-color: #fdfafa; /* Warna latar cream muda */
+  color: #ed12f5;           /* Warna teks pink neon */
+  display: flex;            /* Aktifkan flexbox layout */
+  justify-content: center;  /* Rata tengah horizontal */
+
+}
+
+/* Container utama untuk konten */
+.container {
+  /*box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);*/ /* Efek bayangan (dinonaktifkan) */
+  padding: 20px;            /* Ruang dalam container */
+  border-radius: 10px;      /* Sudut melengkung */
+  background: linear-gradient(135deg, #1f1f1f, #292929); /* Gradien hitam */
+  margin-bottom: 20px;      /* Jarak bawah container */
+  align-items: center;      /* Rata tengah vertikal */
+  text-align: center;       /* Teks rata tengah */
+
+}
+
+/* Container untuk kartu-kartu */
+#data-container {
+  display: flex;      /* Tampilkan anak-anak secara flex (sejajar) */
+  gap: 20px;          /* Jarak antar kartu */
+  display: flex;            /* Aktifkan flexbox layout */
+}
+
+/* Styling untuk setiap kartu */
+.card {
+  background: #fdfafa;       /* Warna latar kartu */
+  padding: 20px;             /* Ruang dalam kartu */
+  border-radius: 10px;       /* Sudut melengkung */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Bayangan kartu */
+  transition: transform 0.3s ease-in-out; /* Animasi perubahan */
+}
+
+/* Efek ketika kartu dihover */
+.card:hover {
+  transform: scale(1.05); /* Perbesar kartu 5% saat dihover */
+}
+
+/* Logo WhatsApp tetap di pojok kanan bawah, 10% dari kanan */
+.side-icons {
+  position: fixed;
+  bottom: 50%;
+  right: 34%; /* 10% dari sisi kanan layar */
+  z-index: 1000;
+  opacity: 0.8;
+
+}
+.side-icons img {
+  width: 50px;
+  height: 50px;
+  opacity: 0.6; /* Awalnya agak transparan */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.side-icons img:hover {
+  transform: scale(1.1); /* Perbesar saat hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan saat hover */
+  opacity: 1; /* Jadi terang penuh */
+}
+
+
+
+
+
+
+/* Footer tetap di bawah tengah layar */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  text-align: center;
+  width: max-content;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Footer isi */
+.socials {
+  background-color: #f2f2f2;
+
+  text-align: center;
+
+
+
+}
+
+.socials img {
+  width: 30px;
+  height: 30px;
+
+}
+
+.credit p {
+  font-size: 14px;
+  color: #fcf9f9;
+  margin: 0;
+}
+
+footer .credit a {
+  color: #ff21cf;
+  text-decoration: none;
+}
+
+.credit a:hover {
+  text-decoration: underline;
+}
