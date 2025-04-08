@@ -53,7 +53,7 @@ body {
 .side-icons {
   position: fixed;
   bottom: 50%;
-  right: 34%; /* 10% dari sisi kanan layar */
+  right: 4%; /* 10% dari sisi kanan layar */
   z-index: 1000;
   opacity: 0.8;
 
